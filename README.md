@@ -17,10 +17,7 @@ Frontend/
 │   ├── global.css
 │   └── style.css
 ├── js/
-│   ├── components/
-│   ├── layout/
-│   ├── pages/
-│   └── main.js
+│   └── app.js
 └── pages/           # HTML files
 ```
 

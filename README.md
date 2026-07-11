@@ -1,6 +1,6 @@
 # 📚 Learning-HUB
 
-A modern learning platform built from scratch using HTML, CSS, JavaScript, and future backend technologies.
+A modern learning platform built from scratch using HTML, CSS, JavaScript, and backend
 
 ---
 

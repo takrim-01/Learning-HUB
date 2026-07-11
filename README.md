@@ -1,34 +1,23 @@
-# Learning-HUB
-folders:
-Frontend {
-    assets : saare images isme add krna aur uska path aisa rahega src="Frontend/assets/..."
-    css : {
-        components : isme saare tables, buttons, cards wagera isme rahenge
-        layout : isme saare sab cheezo ki layouts rahegi
-        pages : isme saare page specific styles rahenge
-        variables : isme saare fonts ki styling wagera sab isme
-        ek aur file banana hoga global.css isme pure page ka dimension aur color hoga
-        style.css : isme saari files css ki files ko import krenge
-        phir index waale me href="Frontend/css/style.css aise define krnge"
-    }
+📌 Rules
+    - Put all images inside Frontend/assets/.
+    - Put reusable CSS in components/.
+    - Put layout CSS in layout/.
+    - Put page-specific CSS in pages/.
+    - Import all CSS files in style.css.
+    - Organize JavaScript the same way as CSS.
+    - Keep all HTML files inside Frontend/pages/.
 
 
-    js : {
-        same css ke trah    
-        }
+🖼️ Asset Example
+<img src="../assets/images/logo.png">
 
 
-    pages :{
-            isme saare pages rahenge aur index me connect karenge
-        }
+🎨 CSS Example
+<link rel="stylesheet" href="../css/style.css">
 
 
-    joh bhi update krnge, usko terminal me aisa likhna hoga:    git status
-
-                                                                git add .
-
-                                                                git commit -m "joh bhi cheez update hogi uska one line description"
-
-                                                                git push
-
-}
+🚀 Before Every Push
+git status
+git add .
+git commit -m "Short description of changes"
+git push

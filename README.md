@@ -1,23 +1,73 @@
-📌 Rules
-    - Put all images inside Frontend/assets/.
-    - Put reusable CSS in components/.
-    - Put layout CSS in layout/.
-    - Put page-specific CSS in pages/.
-    - Import all CSS files in style.css.
-    - Organize JavaScript the same way as CSS.
-    - Keep all HTML files inside Frontend/pages/.
+# 📚 Learning-HUB
 
+A modern learning platform built from scratch using HTML, CSS, JavaScript, and future backend technologies.
 
-🖼️ Asset Example
-<img src="../assets/images/logo.png">
+---
 
+## 📂 Project Structure
 
-🎨 CSS Example
+```text
+Frontend/
+├── assets/          # Images, icons, fonts
+├── css/
+│   ├── components/  # Buttons, cards, tables
+│   ├── layout/      # Navbar, sidebar, footer
+│   ├── pages/       # Page-specific CSS
+│   ├── variables.css
+│   ├── global.css
+│   └── style.css
+├── js/
+│   ├── components/
+│   ├── layout/
+│   ├── pages/
+│   └── main.js
+└── pages/           # HTML files
+```
+
+---
+
+## 📌 Rules
+
+- Store all images in `Frontend/assets/`
+- Reusable CSS → `css/components/`
+- Layout CSS → `css/layout/`
+- Page CSS → `css/pages/`
+- Import all CSS files in `style.css`
+- Organize JavaScript like the CSS structure
+- Keep all HTML files inside `Frontend/pages/`
+
+---
+
+## 📷 Asset Example
+
+```html
+<img src="../assets/images/logo.png" alt="Logo">
+```
+
+---
+
+## 🎨 CSS Example
+
+```html
 <link rel="stylesheet" href="../css/style.css">
+```
 
+---
 
-🚀 Before Every Push
+## 🚀 Git Workflow
+
+```bash
 git status
 git add .
-git commit -m "Short description of changes"
+git commit -m "Short description"
 git push
+```
+
+---
+
+## 🤝 Contribution
+
+- Follow the folder structure.
+- Write clean and readable code.
+- Use meaningful commit messages.
+- Test your changes before pushing.

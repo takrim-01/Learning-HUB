@@ -45,3 +45,118 @@ body{
   color: #3a4b5c;
   letter-spacing: -0.5px;
 }
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-link {
+  position: relative;
+  color: #3a4b5c;
+  font-size: 1rem;
+  font-family: 'Georgia', 'Garamond', serif;
+  cursor: pointer;
+  padding: 0.5rem 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #c9a35d;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #c9a35d;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link[nav-cta] {
+  background-color: #3a4b5c;
+  color: #fdfbf7;
+  padding: 0.6rem 1.4rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link[nav-cta]:hover {
+  background-color: #2c3a47;
+  color: #fdfbf7;
+}
+
+.nav-link[nav-cta]::after {
+  display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background-color 0.25s ease;
+}
+
+.hamburger:hover {
+    background-color: #F5F1EB;
+}
+
+.hamburger span {
+    width: 24px;
+    height: 2.5px;
+    background-color: #3A4B5C;
+    border-radius: 2px;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+    transform-origin: center;
+}
+
+.hamburger.active span:first-child {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 70%;
+        max-width: 300px;
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.35s cubic-bezier(0.4, 0.0, 0.2, 1);
+        box-shadow: -2px 0 8px rgba(45, 45, 45, 0.1);
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+}

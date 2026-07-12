@@ -18,6 +18,8 @@
     color: #3C3836 ;
     font-family: Sora;
     font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 500px;
 }
 
 .navbar-brand {
@@ -98,43 +100,9 @@
   color: #F7F5F2 !important;
 }
 
-.navbar-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.4rem;
-  z-index: 101;
-}
-
-.navbar-toggle span {
-  width: 22px;
-  height: 2px;
-  background-color: #1B2430;
-  border-radius: 2px;
-  transition: transform 0.25s ease, opacity 0.2s ease;
-}
-
-.navbar-toggle.active span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-
-.navbar-toggle.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.navbar-toggle.active span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
 
 @media (max-width: 768px) {
 
-  .navbar-toggle {
-    display: none;
-  }
 
   .navbar-menu {
     display: flex;
@@ -162,15 +130,13 @@
 }
 
 .navbar-link:focus-visible,
-.navbar-cta:focus-visible,
-.navbar-toggle:focus-visible {
+.navbar-cta:focus-visible {
   outline: 2px solid #1B2430;
   outline-offset: 3px;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .navbar-link::before,
-  .navbar-toggle span,
   .navbar-cta {
     transition: none;
   }

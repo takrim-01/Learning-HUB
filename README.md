@@ -1,4 +1,4 @@
-# 📚 Learning-HUB
+# 📚 Knowledge Cafe
 
 A modern learning platform built from scratch using HTML, CSS, JavaScript, and future backend technologies.
 

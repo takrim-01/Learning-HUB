@@ -1,4 +1,4 @@
-# 📚 Knowledge Cafe
+# 📚 Knowledge Café
 
 A modern learning platform built from scratch using HTML, CSS, JavaScript, and future backend technologies.
 

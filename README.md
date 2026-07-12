@@ -1,4 +1,4 @@
-# ☕ NexLearn
+# ☕ Knowledge Café
 
 > A learning hub reimagined — a cozy corner of the web for sharing knowledge, notes, and resources.
 
@@ -9,7 +9,7 @@
 ## 📁 Project Structure
 
 ```
-NexLearn/
+Knowledge Café/
 ├── Frontend/
 │   ├── assets/              # Images, icons, fonts, and other static media
 │   ├── css/
@@ -162,4 +162,4 @@ This project is currently unlicensed. Add a `LICENSE` file (e.g. MIT) if you pla
 
 ---
 
-*Made with ☕ and curiosity — NexLearn.*
+*Made with ☕ and curiosity — Knowledge Café.*

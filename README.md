@@ -17,9 +17,7 @@ Knowledge Café/
 │   │   ├── index-html.css   # Styles specific to index.html
 │   │   └── style.css        # General/shared component styles
 │   ├── js/
-│   │   ├── app.js           # Shared utilities and initialization logic
-│   │   ├── index-html.js    # Logic specific to index.html
-│   │   └── login-html.js    # Logic specific to login.html
+│   │   └── app.js           # Main JavaScript entry point / app logic
 │   └── pages/
 │       ├── home.html        # Home page
 │       └── login.html        # Login page
@@ -49,15 +47,14 @@ Knowledge Café/
 ### File & Folder Naming
 - Use **lowercase-with-hyphens** for all file and folder names (e.g. `home.html`, not `Home.html`).
 - Keep page-specific CSS files named after their page (e.g. `index-html.css` for `index.html`).
-- Keep page-specific JS files named after their page (e.g. `login-html.js` for `login.html`).
-- Shared/reusable styles and logic go in `global.css`, `style.css`, or `app.js` — do not duplicate rules or functions across files.
+- Shared/reusable styles go in `global.css` or `style.css` — do not duplicate rules across files.
 
 ### Folder Responsibilities
 | Folder/File   | Purpose                                          |
 |----------------|--------------------------------------------------|
 | `assets/`      | Images, fonts, icons — no code                    |
 | `css/`         | All stylesheets, one per page or purpose          |
-| `js/`          | All JavaScript; `app.js` for shared logic, page-specific files for page logic |
+| `js/`          | All JavaScript logic                              |
 | `pages/`       | Secondary HTML pages (not the main entry point)   |
 | `index.html`   | Root/landing entry point of the site              |
 
@@ -67,18 +64,6 @@ Knowledge Café/
 - Keep JavaScript modular — one clear responsibility per function.
 - Comment non-obvious logic, but avoid over-commenting simple code.
 - Always link CSS/JS with **relative paths** so the project stays portable.
-
-### JavaScript Organization
-- **`app.js`**: Shared utilities, initialization, and global event listeners that run on all pages (e.g., theme toggle, navbar interactivity).
-- **Page-specific files** (e.g., `index-html.js`, `login-html.js`): Logic unique to that page (e.g., form validation, dynamic content loading).
-- Link page-specific JS files **only in their corresponding HTML pages**, not globally.
-- Example HTML head:
-  ```html
-  <link rel="stylesheet" href="../css/global.css">
-  <link rel="stylesheet" href="../css/index-html.css">
-  <script defer src="../js/app.js"></script>
-  <script defer src="../js/index-html.js"></script>
-  ```
 
 ### Branching (if working with others)
 - `main` → stable, deployable code only.

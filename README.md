@@ -1,165 +1,347 @@
-# ☕ Knowledge Café
+# Knowledge Café ☕🎓
 
-> A learning hub reimagined — a cozy corner of the web for sharing knowledge, notes, and resources.
+A collaborative web platform designed to help aspiring developers learn modern technologies through interactive coding, real-world projects, and practical exercises.
 
-*(Formerly "Learning Hub")*
+---
+
+## 📋 Project Overview
+
+**Knowledge Café** is a full-featured learning platform built with a focus on responsive design, clean UI, and user-friendly navigation. The project is in active development with a strong frontend foundation featuring a modern design system.
+
+**Status:** Frontend foundation stage ✅
+- Responsive sticky navbar ✅
+- Hero section with CTA buttons ✅
+- Feature showcase grid ✅
+- Design system defined 🎨
 
 ---
 
 ## 📁 Project Structure
 
 ```
-Knowledge Café/
+Knowledge-Café/
 ├── Frontend/
-│   ├── assets/              # Images, icons, fonts, and other static media
 │   ├── css/
-│   │   ├── global.css       # Site-wide base styles (resets, variables, typography)
-│   │   ├── index-html.css   # Styles specific to index.html
-│   │   └── style.css        # General/shared component styles
+│   │   ├── global.css        (Global styles & resets)
+│   │   ├── index-html.css    (Index page styles)
+│   │   └── style.css          (Main stylesheet - imports all CSS)
 │   ├── js/
-│   │   └── app.js           # Main JavaScript entry point / app logic
-│   └── pages/
-│       ├── home.html        # Home page
-│       └── login.html        # Login page
-├── index.html                # Main entry point
-└── README.md                  # You are here
+│   │   └── app.js             (Main JavaScript file)
+│   └── pages/                 (Additional HTML pages)
+├── index.html                 (Homepage)
+├── README.md                  (Project documentation)
+└── .gitignore                 (Git ignore file)
 ```
+
+---
+
+## 🎨 Design System
+
+### Typography
+
+| Element | Font | Size | Weight | Usage |
+|---------|------|------|--------|-------|
+| Logo & Headings | Sora | 1.75rem - 3.5rem | 500 - 700 | Primary branding & section headings |
+| Body Text | Inter | 0.95rem - 1.125rem | 400 - 600 | Paragraph content & labels |
+| Buttons | Sora | 1rem | 600 | Call-to-action elements |
+
+**Font Imports:**
+- Sora: Modern, geometric sans-serif (headings & branding)
+- Inter: Clean, versatile sans-serif (body text & UI)
+
+### Color Palette
+
+| Color | Hex Code | Usage |
+|-------|----------|-------|
+| Off-White (Primary BG) | `#F7F5F2` | Page background, navbar background |
+| Dark Slate | `#1B2430` | Text, icons, borders |
+| Charcoal | `#2B2925` | Hero buttons, dark boxes |
+| Cream | `#E4E2DD` | Light box backgrounds, text on dark |
+| Light Gray | `#f3f3f3` | Feature pill backgrounds |
+| Muted Text | `#7d7d7d` | Secondary text, descriptions |
+
+### Spacing & Layout
+
+- **Padding:** 1rem, 1.25rem, 1.5rem (consistent spacing units)
+- **Gap:** 12px - 64px (component separation)
+- **Border Radius:** 10px (inputs/links), 20px (large boxes), 999px (pills/buttons)
+- **Max Width:** 1400px (container max-width)
+
+---
+
+## ✨ Features Implemented
+
+### Navbar
+- Sticky positioning with smooth shadow
+- Responsive design (mobile menu ready)
+- Hover effects on navigation links
+- CTA button with border & fill animation
+- Logo with brand mark
+
+### Hero Section
+- Large, responsive heading (clamp 2rem - 3.5rem)
+- Descriptive paragraph with line-height optimization
+- Feature pills (7 interactive learning features)
+- Dual CTA buttons (primary & secondary)
+- 6-box feature grid showcase:
+  - 3 dark boxes with light text (Hands On, Interactive, Master)
+  - 3 light boxes with dark text (Build, Learn, Achieve)
+
+### Page Structure
+- Global CSS reset & variables
+- Page-specific CSS organization
+- Responsive breakpoints (768px, 480px)
+- Focus accessibility states (outline on focus-visible)
+
+---
+
+## 📝 What's Left to Do
+
+- [ ] Create JS files for interactive components
+  - [ ] Navbar mobile menu toggle
+  - [ ] Button click handlers
+  - [ ] Smooth scrolling
+  
+- [ ] Build remaining sections:
+  - [ ] Featured Courses section
+  - [ ] Course Categories
+  - [ ] Key Features section
+  - [ ] Learning Paths
+  - [ ] Testimonials/Reviews
+  - [ ] Final CTA section
+  
+- [ ] Backend setup
+  - [ ] Database schema design
+  - [ ] API endpoints
+  - [ ] Authentication system
+  
+- [ ] Additional pages:
+  - [ ] Courses page
+  - [ ] About page
+  - [ ] Profile/Dashboard
+  - [ ] Individual course pages
+  
+- [ ] Enhancement & Polish
+  - [ ] Dark mode toggle
+  - [ ] Search functionality
+  - [ ] Filtering & sorting
+  - [ ] Performance optimization
+  - [ ] SEO optimization
 
 ---
 
 ## 🚀 Getting Started
 
-1. Clone the repository:
+### Prerequisites
+- Git installed on your computer
+- Code editor (VS Code recommended)
+- GitHub account
+
+### Step 1: Clone the Repository
+
+**If you're a contributor:**
+
+1. Open VS Code
+2. Open Terminal: `Ctrl + `` (backtick) or `View > Terminal`
+3. Navigate to where you want the project:
    ```bash
-   git clone https://github.com/<your-username>/knowledge-cafe.git
-   cd knowledge-cafe
+   cd Desktop
    ```
-2. Open `index.html` in your browser, or use a local dev server (recommended):
+4. Clone the repository:
    ```bash
-   npx serve .
+   git clone https://github.com/takrim-01/Knowledge-Cafe.git
    ```
-   or, with VS Code, use the **Live Server** extension.
+5. Enter the project folder:
+   ```bash
+   cd Knowledge-Cafe
+   ```
+6. Open the project in VS Code:
+   ```bash
+   code .
+   ```
 
 ---
 
-## 📐 Project Rules & Conventions
+## 👨‍💻 Git Workflow for Contributors
 
-### File & Folder Naming
-- Use **lowercase-with-hyphens** for all file and folder names (e.g. `home.html`, not `Home.html`).
-- Keep page-specific CSS files named after their page (e.g. `index-html.css` for `index.html`).
-- Shared/reusable styles go in `global.css` or `style.css` — do not duplicate rules across files.
+### Step 1: Pull Latest Changes
 
-### Folder Responsibilities
-| Folder/File   | Purpose                                          |
-|----------------|--------------------------------------------------|
-| `assets/`      | Images, fonts, icons — no code                    |
-| `css/`         | All stylesheets, one per page or purpose          |
-| `js/`          | All JavaScript logic                              |
-| `pages/`       | Secondary HTML pages (not the main entry point)   |
-| `index.html`   | Root/landing entry point of the site              |
+Before starting work, always get the latest code:
 
-### Coding Style
-- Indent with **2 spaces** (no tabs).
-- Use semantic HTML5 tags (`<header>`, `<main>`, `<footer>`, `<section>`) over generic `<div>`s where possible.
-- Keep JavaScript modular — one clear responsibility per function.
-- Comment non-obvious logic, but avoid over-commenting simple code.
-- Always link CSS/JS with **relative paths** so the project stays portable.
-
-### Branching (if working with others)
-- `main` → stable, deployable code only.
-- `dev` → active development.
-- `feature/<name>` → new features (e.g. `feature/login-page`).
-- `fix/<name>` → bug fixes.
-
-### Commit Message Style
-Use short, present-tense messages, ideally following this pattern:
+```bash
+git pull origin main
 ```
-<type>: <short description>
-```
-Examples:
-- `feat: add login page layout`
-- `fix: correct navbar overflow on mobile`
-- `style: update global.css color variables`
-- `docs: update README with setup steps`
 
-Common types: `feat`, `fix`, `style`, `docs`, `refactor`, `chore`
+### Step 2: Create a New Branch
+
+Create a branch for your feature (keep it descriptive):
+
+```bash
+git checkout -b feature/navbar-mobile
+```
+
+**Branch naming convention:**
+- `feature/feature-name` (for new features)
+- `fix/bug-name` (for bug fixes)
+- `docs/update-readme` (for documentation)
+
+### Step 3: Make Your Changes
+
+Edit files in VS Code. Save your work (`Ctrl + S`).
+
+### Step 4: Check Changed Files
+
+See what you've modified:
+
+```bash
+git status
+```
+
+### Step 5: Add Changes to Staging
+
+Add specific files:
+```bash
+git add Frontend/js/app.js
+```
+
+Or add all changes:
+```bash
+git add .
+```
+
+### Step 6: Commit Your Changes
+
+Write a clear, short commit message:
+
+```bash
+git commit -m "Add mobile navbar toggle functionality"
+```
+
+**Commit message tips:**
+- Use present tense: "Add" not "Added"
+- Be specific: "Fix hero button spacing" not "Bug fix"
+- Keep it short: 50 characters or less
+
+### Step 7: Push to GitHub
+
+Push your branch to GitHub:
+
+```bash
+git push origin feature/navbar-mobile
+```
+
+### Step 8: Create a Pull Request
+
+1. Go to the repository on GitHub
+2. Click "Pull Requests" tab
+3. Click "New Pull Request"
+4. Select your branch and add a description
+5. Submit for review
 
 ---
 
-## 🧑‍💻 How to Commit & Push (Terminal)
+## 📥 After Accepting Contributor Invitation
 
-### First-time setup (only once per machine)
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-```
+**If you haven't cloned the repo yet:**
 
-### Initialize a repo (only if not already a git repo)
-```bash
-git init
-git remote add origin https://github.com/<your-username>/knowledge-cafe.git
-```
+1. Check your GitHub email for the invitation
+2. Click "Accept invitation" in the email or on GitHub
+3. Go to: https://github.com/takrim-01/Knowledge-Cafe
+4. Click the green "Code" button
+5. Copy the HTTPS link
+6. Follow **Step 1: Clone the Repository** above
 
-### Regular workflow
+**If you already cloned it:**
+- You're ready to go! Just create a branch and start working (see Git Workflow above).
+
+---
+
+## 💡 Working with the Code
+
+### CSS Structure
+- `global.css` → Reset & base styles
+- `index-html.css` → Homepage-specific styles
+- `style.css` → Main import file (includes all CSS)
+- **Future:** Create page-specific CSS files for new pages
+
+### JavaScript Organization
+- `app.js` → Main JavaScript file
+- **Future:** Create page-specific JS files for interactive features
+- Keep functions modular and reusable
+
+### Adding New Pages
+1. Create HTML file in `Frontend/pages/`
+2. Create corresponding CSS file in `Frontend/css/`
+3. Create corresponding JS file in `Frontend/js/`
+
+---
+
+## 📱 Responsive Breakpoints
+
+The design uses two main breakpoints:
+
+| Breakpoint | Size | Used For |
+|------------|------|----------|
+| Tablet & Mobile | 768px and below | Stack layout, hide desktop elements |
+| Mobile | 480px and below | Full-width buttons, adjust spacing |
+
+---
+
+## 🤝 Contributing Guidelines
+
+1. **Always pull before working:** `git pull origin main`
+2. **Create a feature branch** for your work
+3. **Keep commits small & focused** (one feature per commit)
+4. **Test your changes** before pushing
+5. **Write clear commit messages**
+6. **Submit PR when ready** for review
+
+---
+
+## 🎯 Quick Reference Commands
+
 ```bash
-# 1. Check what's changed
+# Clone repository
+git clone https://github.com/takrim-01/Knowledge-Cafe.git
+
+# Check status of files
 git status
 
-# 2. Stage your changes
-git add .                     # stage everything
-git add path/to/file.html     # or stage a specific file
+# Create new branch
+git checkout -b feature/your-feature-name
 
-# 3. Commit with a clear message
-git commit -m "feat: add login page styling"
-
-# 4. Pull latest changes first (avoids conflicts)
-git pull origin main
-
-# 5. Push your changes
-git push origin main
-```
-
-### First push to a new remote repo
-```bash
-git branch -M main
-git push -u origin main
-```
-
-### Working on a feature branch
-```bash
-git checkout -b feature/new-page
-# ... make changes ...
+# Add changes
 git add .
-git commit -m "feat: add new resources page"
-git push -u origin feature/new-page
-```
-Then open a Pull Request on GitHub to merge into `main`.
 
----
+# Commit changes
+git commit -m "Your commit message"
 
-## 🛠️ .gitignore Suggestion
-Create a `.gitignore` file in the root with:
-```
-node_modules/
-.DS_Store
-*.log
-.vscode/
+# Push to GitHub
+git push origin feature/your-feature-name
+
+# Switch between branches
+git checkout main
+
+# Pull latest changes
+git pull origin main
 ```
 
 ---
 
-## 📌 Roadmap / Ideas
-- [ ] Add a signup page alongside login
-- [ ] Add dark/light theme toggle
-- [ ] Connect a backend/auth service
-- [ ] Add a resources/blog section for shared notes
-- [ ] Make layout responsive for mobile
+## 📧 Questions?
+
+If you're stuck:
+1. Check this README first
+2. Review the code comments
+3. Ask your Takreem
 
 ---
 
 ## 📄 License
-This project is currently unlicensed. Add a `LICENSE` file (e.g. MIT) if you plan to make it public or open-source.
+
+This project is part of the Knowledge Café collaborative initiative.
 
 ---
 
-*Made with ☕ and curiosity — Knowledge Café.*
+**Happy coding! 🚀**
+

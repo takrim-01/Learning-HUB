@@ -26,8 +26,7 @@ Knowledge-Café/
 │   │   ├── index-html.css    (Index page styles)
 │   │   └── style.css          (Main stylesheet - imports all CSS)
 │   ├── js/
-│   │   └── script.js             (Main JavaScript file)
-│   └── pages/                 (Additional HTML pages)
+│        └── script.js             (Main JavaScript file)
 ├── index.html                 (Homepage)
 ├── README.md                  (Project documentation)
 └── .gitignore                 (Git ignore file)

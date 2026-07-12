@@ -105,6 +105,26 @@
 
 @media (max-width: 768px) {
 
+  .navbar-logo {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+  }
+
+.hero-btn {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .primary-hero-btn,
+  .secondary-hero-btn {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+}
 
   .navbar-menu {
     display: flex;

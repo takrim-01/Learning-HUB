@@ -36,11 +36,18 @@ body{
   gap: 2rem;
 }
 
-.nav-logo{
+.nav-logo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  height: 36px;       
+  width: auto;
+  display: block;
 }
 
 .logo-text{

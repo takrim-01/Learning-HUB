@@ -3,54 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Frontend/css/style.css">
+    <link rel="stylesheet" href="sign-up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">    
     <title>Sign Up Page</title>
 </head>
 <body>
-        <h1>Sign up</h1>
-        <h4>connect with us</h4>
-        <h5>Track your progress</h5>
-        <h5>easy learning</h5>
-        <h5>ADS free</h5>
-        <h5>code practice</h5>
+    <div class="container">
+        <h3>Sign up to </h3>
+        <h2>Unlock Your Potential</h2>
+        
+        <div class="feature">
+            <div class="left">
+                <p><i class="fa-solid fa-check tick"></i>Track your progress</p>
+                <p><i class="fa-solid fa-check tick"></i>Easy learning</p>
+            </div>
+            <div class="right">
+                <p><i class="fa-solid fa-check tick"></i>ads free</p>
+                <p><i class="fa-solid fa-check tick"></i>code practice</p>
+        </div>
+        </div>
         <h6>....and much more!</h6>
        <form>
         <div class="form-group">
         <label for="email"></label>
-        <input type="email" id="email" placeholder="Enter your email" required>
-        <br>
-        <br>
+        <input class="form-input" type="email" id="email" placeholder="Enter your email" required>
       
         <label for="password"></label>
-        <input type="password" id="password" placeholder="password" required>
-       
-        <br>
-        <br>
+        <input class="form-input" type="password" id="password" placeholder="password" required>
+        <p class="hint">NOTE: Create a strong password</p>
         
         <label for="confirm-password"></label>
-        <input type="password" id="confirm-password" placeholder="confirm password" required>
+        <input class="form-input" type="password" id="confirm-password" placeholder="confirm password" required>
     
-        <br>
-        <br>
         <label for="first-name"></label>
-        <input type="text" id="first-name" placeholder="Enter your first name" required>
-        <br>
-        <br>
+        <input class="form-input" type="text" id="first-name" placeholder="Enter your first name" required>
+        
         <label for="last-name"></label>
-        <input type="text" id="last-name" placeholder="Enter your last name" required>
-        <br>
-        <br>
-        <div class="checkbox-group">
-            <input type="checkbox" id="update">
-            <label for="update">Update me on new features</label>
+        <input class="form-input" type="text" id="last-name" placeholder="Enter your last name" required>
         </div>
-        <br>
-    </div>
-    <br>
+
+            <input class="checkbox-group" type="checkbox" id="update"> <label for="update">Update me on new features</label>
+            
     <button type="submit">Create Account</button>
 </form>
-    <div class="login-link">
-        <p>Already have an account? <a href="login.html">Login</a></p>
+    <div>
+        <p class="login-link"> Already have an account?<a href="login.html">Login</a></p>
     </div>  
+     <div class="divider">
+        <hr>
+        <span>OR</span>
+        <hr>
+    </div>
+    <div class="social-login">
+        <a href="https://www.google.com" class="google-btn">
+            <img src="image.png" alt="Google" class="google-btn-logo">
+        </a>
+        <a href="https://www.facebook.com" class="facebook-btn">
+           <img src="facebook.png" alt="Facebook" class="facebook-btn-logo">
+        </a>
+        <a href="https://www.github.com" class="github-btn">
+            <img src="github.png" alt="GitHub" class="github-btn-logo"> 
+        </a>
+    </div>
 </body>
 </html>

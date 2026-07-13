@@ -6,31 +6,30 @@ A collaborative web platform designed to help aspiring developers learn modern t
 
 ## 📋 Project Overview
 
-**Knowledge Café** is a full-featured learning platform built with a focus on responsive design, clean UI, and user-friendly navigation. The project is in active development with a strong frontend foundation featuring a modern design system.
+**Knowledge Café** is a full-featured learning platform built with a focus on responsive design, clean UI, and user-friendly navigation. The project is in active development with a strong frontend foundation featuring a modern design system and responsive interactions.
 
-**Status:** Frontend foundation stage ✅
-- Responsive sticky navbar ✅
+**Current Status:** Frontend Foundation - Navbar & Hero Section ✅
+- Responsive sticky navbar with mobile menu ✅
 - Hero section with CTA buttons ✅
-- Feature showcase grid ✅
+- Feature showcase grid (9 boxes) ✅
 - Design system defined 🎨
+- Mobile responsive (768px breakpoint) ✅
 
 ---
 
 ## 📁 Project Structure
 
 ```
-Knowledge-Café/
+Learning-HUB/
 ├── Frontend/
 │   ├── css/
-│   │   ├── global.css        (Global styles & resets)
-│   │   ├── index-html.css    (Index page styles)
-│   │   └── style.css          (Main stylesheet - imports all CSS)
-│   ├── js/
-│   │   └── app.js             (Main JavaScript file)
-│   └── pages/                 (Additional HTML pages)
-├── index.html                 (Homepage)
-├── README.md                  (Project documentation)
-└── .gitignore                 (Git ignore file)
+│   │   ├── index-html.css    (Homepage styles)
+│   │   └── style.css         (Main stylesheet - imports CSS)
+│   └── js/
+│       └── script.js         (Interactive features & menu toggle)
+├── index.html                (Homepage)
+├── README.md                 (Project documentation)
+└── .gitignore               (Git ignore file)
 ```
 
 ---
@@ -41,92 +40,116 @@ Knowledge-Café/
 
 | Element | Font | Size | Weight | Usage |
 |---------|------|------|--------|-------|
-| Logo & Headings | Sora | 1.75rem - 3.5rem | 500 - 700 | Primary branding & section headings |
-| Body Text | Inter | 0.95rem - 1.125rem | 400 - 600 | Paragraph content & labels |
-| Buttons | Sora | 1rem | 600 | Call-to-action elements |
+| Logo & Headings | Georgia / Garamond | 1.5rem+ | 600 | Primary branding & navigation |
+| Body Text | System Font | 1rem | 400 - 600 | Paragraph content & descriptions |
+| CTA Buttons | System Font | 1rem | 600 | Call-to-action elements |
 
-**Font Imports:**
-- Sora: Modern, geometric sans-serif (headings & branding)
-- Inter: Clean, versatile sans-serif (body text & UI)
+**Font Stack:**
+- Logo/Nav: Georgia, Garamond, serif (elegant, professional)
+- Body: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif
 
 ### Color Palette
 
 | Color | Hex Code | Usage |
 |-------|----------|-------|
-| Off-White (Primary BG) | `#F7F5F2` | Page background, navbar background |
-| Dark Slate | `#1B2430` | Text, icons, borders |
-| Charcoal | `#2B2925` | Hero buttons, dark boxes |
-| Cream | `#E4E2DD` | Light box backgrounds, text on dark |
-| Light Gray | `#f3f3f3` | Feature pill backgrounds |
-| Muted Text | `#7d7d7d` | Secondary text, descriptions |
+| Cream (Primary BG) | `#fdfbf7` | Page background |
+| White | `#fff` | Navbar background |
+| Dark Blue-Gray | `#3a4b5c` | Text, icons, primary buttons |
+| Charcoal | `#2c3a47` | Button hover state |
+| Gold Accent | `#c9a35d` | Link hover, accent color |
+| Dark Text | `#2D2D2D` | Body text |
 
 ### Spacing & Layout
 
-- **Padding:** 1rem, 1.25rem, 1.5rem (consistent spacing units)
-- **Gap:** 12px - 64px (component separation)
-- **Border Radius:** 10px (inputs/links), 20px (large boxes), 999px (pills/buttons)
-- **Max Width:** 1400px (container max-width)
+- **Padding:** 1rem, 1.5rem, 2rem (consistent spacing units)
+- **Gap:** 0.5rem - 2rem (component separation)
+- **Border Radius:** 4px (buttons/inputs), 6px (hover areas)
+- **Max Width:** 1200px (container max-width)
+- **Navbar Height:** ~70px (approx with padding)
 
 ---
 
 ## ✨ Features Implemented
 
 ### Navbar
-- Sticky positioning with smooth shadow
-- Responsive design (mobile menu ready)
-- Hover effects on navigation links
-- CTA button with border & fill animation
-- Logo with brand mark
+- ✅ Sticky positioning with white background
+- ✅ Responsive design with mobile hamburger menu
+- ✅ Navigation links (Home, About, Courses)
+- ✅ CTA button with hover animation (dark blue)
+- ✅ Underline hover effect on nav links (gold accent)
+- ✅ Mobile menu animation (slides from top at 768px)
+- ✅ Hamburger icon animation (X transform)
+- ✅ Click outside to close menu
+- ✅ Escape key to close menu
+- ✅ Smooth scrolling to anchors
 
 ### Hero Section
-- Large, responsive heading (clamp 2rem - 3.5rem)
-- Descriptive paragraph with line-height optimization
-- Feature pills (7 interactive learning features)
-- Dual CTA buttons (primary & secondary)
-- 6-box feature grid showcase:
-  - 3 dark boxes with light text (Hands On, Interactive, Master)
-  - 3 light boxes with dark text (Build, Learn, Achieve)
+- ✅ Main heading: "Everything you need to become a Developer"
+- ✅ Descriptive paragraph
+- ✅ Feature pills (6 interactive learning features):
+  - Structured Courses
+  - Deep Learning Paths
+  - Digital Learning
+  - Resource Center
+  - Peer Learning
+  - Flexible Learning
+- ✅ Dual CTA buttons (Get Started, Explore Course)
+- ✅ 9-box feature grid:
+  - Practice, Build, Create
+  - Code, Master, Develop
+  - Grow, Achieve
+  - (3-column layout responsive to mobile)
 
-### Page Structure
-- Global CSS reset & variables
-- Page-specific CSS organization
-- Responsive breakpoints (768px, 480px)
-- Focus accessibility states (outline on focus-visible)
+### CSS Organization
+- ✅ CSS reset & base styles in style.css
+- ✅ Page-specific styles in index-html.css
+- ✅ Responsive breakpoints (768px for mobile)
+- ✅ Smooth transitions and hover effects
+- ✅ Accessibility: focus states on interactive elements
+
+### JavaScript Features
+- ✅ Hamburger menu toggle functionality
+- ✅ Mobile menu open/close with animations
+- ✅ Smooth scroll to section anchors
+- ✅ Click-outside menu close
+- ✅ Escape key menu close
+- ✅ Active state management for menu items
 
 ---
 
-## 📝 What's Left to Do
+## 📝 What's Next
 
-- [ ] Create JS files for interactive components
-  - [ ] Navbar mobile menu toggle
-  - [ ] Button click handlers
-  - [ ] Smooth scrolling
-  
-- [ ] Build remaining sections:
-  - [ ] Featured Courses section
-  - [ ] Course Categories
-  - [ ] Key Features section
-  - [ ] Learning Paths
-  - [ ] Testimonials/Reviews
-  - [ ] Final CTA section
-  
-- [ ] Backend setup
-  - [ ] Database schema design
-  - [ ] API endpoints
-  - [ ] Authentication system
-  
-- [ ] Additional pages:
-  - [ ] Courses page
-  - [ ] About page
-  - [ ] Profile/Dashboard
-  - [ ] Individual course pages
-  
-- [ ] Enhancement & Polish
-  - [ ] Dark mode toggle
-  - [ ] Search functionality
-  - [ ] Filtering & sorting
-  - [ ] Performance optimization
-  - [ ] SEO optimization
+### Immediate (Frontend)
+- [ ] Create Featured Courses section
+- [ ] Build Course Categories grid
+- [ ] Add Key Features section with icons
+- [ ] Create Learning Paths section
+- [ ] Build Testimonials/Reviews section
+- [ ] Add Final CTA (footer) section
+- [ ] Style all sections with consistent design
+
+### Pages to Build
+- [ ] `/courses/` - Courses listing page
+- [ ] `/about/` - About page
+- [ ] `/dashboard/` - User profile/dashboard
+- [ ] `/course/[id]/` - Individual course pages
+
+### Backend Setup
+- [ ] Database schema design (PostgreSQL/MongoDB)
+- [ ] API endpoints (Node.js/Express or Python/Flask)
+- [ ] Authentication system (JWT or OAuth)
+- [ ] Course management system
+- [ ] User enrollment system
+
+### Enhancements
+- [ ] Dark mode toggle
+- [ ] Course search functionality
+- [ ] Filtering & sorting options
+- [ ] User progress tracking
+- [ ] Comment/discussion system
+- [ ] Performance optimization
+- [ ] SEO optimization
+- [ ] Analytics integration
 
 ---
 
@@ -139,7 +162,7 @@ Knowledge-Café/
 
 ### Step 1: Clone the Repository
 
-**If you're a contributor:**
+**If you're a new contributor:**
 
 1. Open VS Code
 2. Open Terminal: `Ctrl + `` (backtick) or `View > Terminal`
@@ -149,152 +172,138 @@ Knowledge-Café/
    ```
 4. Clone the repository:
    ```bash
-   git clone https://github.com/takrim-01/Knowledge-Cafe.git
+   git clone https://github.com/takrim-01/Learning-HUB.git
    ```
 5. Enter the project folder:
    ```bash
-   cd Knowledge-Cafe
+   cd Learning-HUB
    ```
-6. Open the project in VS Code:
+6. Open in VS Code:
    ```bash
    code .
    ```
+
+### Step 2: View the Project
+1. Right-click `index.html` → "Open with Live Server" (if you have the extension)
+2. Or open `index.html` directly in your browser
 
 ---
 
 ## 👨‍💻 Git Workflow for Contributors
 
-### Step 1: Pull Latest Changes
-
-Before starting work, always get the latest code:
-
+### Before You Start
+Always pull the latest changes:
 ```bash
 git pull origin main
 ```
 
-### Step 2: Create a New Branch
+### Create a Feature Branch
 
-Create a branch for your feature (keep it descriptive):
-
+Use descriptive branch names:
 ```bash
-git checkout -b feature/navbar-mobile
+git checkout -b feature/courses-section
 ```
 
-**Branch naming convention:**
-- `feature/feature-name` (for new features)
-- `fix/bug-name` (for bug fixes)
-- `docs/update-readme` (for documentation)
+**Branch naming:**
+- `feature/feature-name` (new features)
+- `fix/bug-name` (bug fixes)
+- `docs/update-readme` (documentation)
 
-### Step 3: Make Your Changes
+### Make Your Changes
 
-Edit files in VS Code. Save your work (`Ctrl + S`).
+Edit files in VS Code and save regularly (`Ctrl + S`).
 
-### Step 4: Check Changed Files
+### Check Status
 
 See what you've modified:
-
 ```bash
 git status
 ```
 
-### Step 5: Add Changes to Staging
+### Stage & Commit
 
-Add specific files:
-```bash
-git add Frontend/js/app.js
-```
-
-Or add all changes:
+Add your changes:
 ```bash
 git add .
 ```
 
-### Step 6: Commit Your Changes
-
-Write a clear, short commit message:
-
+Write a clear commit message:
 ```bash
-git commit -m "Add mobile navbar toggle functionality"
+git commit -m "Add featured courses section with filtering"
 ```
 
-**Commit message tips:**
+**Good commit messages:**
 - Use present tense: "Add" not "Added"
-- Be specific: "Fix hero button spacing" not "Bug fix"
-- Keep it short: 50 characters or less
+- Be specific about what changed
+- Keep under 50 characters if possible
 
-### Step 7: Push to GitHub
+### Push & Create Pull Request
 
-Push your branch to GitHub:
-
+Push your branch:
 ```bash
-git push origin feature/navbar-mobile
+git push origin feature/courses-section
 ```
 
-### Step 8: Create a Pull Request
-
-1. Go to the repository on GitHub
-2. Click "Pull Requests" tab
-3. Click "New Pull Request"
-4. Select your branch and add a description
-5. Submit for review
-
----
-
-## 📥 After Accepting Contributor Invitation
-
-**If you haven't cloned the repo yet:**
-
-1. Check your GitHub email for the invitation
-2. Click "Accept invitation" in the email or on GitHub
-3. Go to: https://github.com/takrim-01/Knowledge-Cafe
-4. Click the green "Code" button
-5. Copy the HTTPS link
-6. Follow **Step 1: Clone the Repository** above
-
-**If you already cloned it:**
-- You're ready to go! Just create a branch and start working (see Git Workflow above).
+Then:
+1. Go to https://github.com/takrim-01/Learning-HUB
+2. Click "Pull Requests" → "New Pull Request"
+3. Select your branch and add a description
+4. Submit for review
 
 ---
 
 ## 💡 Working with the Code
 
 ### CSS Structure
-- `global.css` → Reset & base styles
+- `style.css` → Main import file (base styles)
 - `index-html.css` → Homepage-specific styles
-- `style.css` → Main import file (includes all CSS)
-- **Future:** Create page-specific CSS files for new pages
+- **Future:** Create `pages/` CSS for additional pages
 
 ### JavaScript Organization
-- `app.js` → Main JavaScript file
-- **Future:** Create page-specific JS files for interactive features
-- Keep functions modular and reusable
+- `script.js` → Main interactive features (currently: navbar menu toggle)
+- **Future:** Create page-specific JS files as needed
 
-### Adding New Pages
-1. Create HTML file in `Frontend/pages/`
-2. Create corresponding CSS file in `Frontend/css/`
-3. Create corresponding JS file in `Frontend/js/`
+### Adding New Sections to Homepage
+1. Add HTML in `index.html` with semantic tags
+2. Add CSS in `index-html.css` with clear section classes
+3. Add JS in `script.js` if interaction is needed
+4. Test responsiveness at 768px and 480px breakpoints
+
+### Creating New Pages
+1. Create `pages/[page-name].html`
+2. Create `Frontend/css/[page-name].css`
+3. Create `Frontend/js/[page-name].js` (if needed)
+4. Update navbar links to point to new pages
 
 ---
 
-## 📱 Responsive Breakpoints
+## 📱 Responsive Design
 
-The design uses two main breakpoints:
+### Mobile Breakpoints
 
-| Breakpoint | Size | Used For |
-|------------|------|----------|
-| Tablet & Mobile | 768px and below | Stack layout, hide desktop elements |
-| Mobile | 480px and below | Full-width buttons, adjust spacing |
+| Breakpoint | Size | Changes |
+|-----------|------|---------|
+| Desktop | 1200px+ | Full layout, multi-column grids |
+| Tablet | 768px - 1199px | Hamburger menu active, adjusted spacing |
+| Mobile | Below 768px | Stack layout, full-width buttons, mobile menu |
+
+**Mobile Menu:**
+- Hidden on desktop
+- Slides down from top on tablet/mobile
+- Takes full viewport width
+- Closes on link click, escape key, or click outside
 
 ---
 
 ## 🤝 Contributing Guidelines
 
-1. **Always pull before working:** `git pull origin main`
-2. **Create a feature branch** for your work
-3. **Keep commits small & focused** (one feature per commit)
-4. **Test your changes** before pushing
+1. **Pull latest:** `git pull origin main` before starting
+2. **Create feature branch** for your work
+3. **Keep commits focused** (one feature per commit)
+4. **Test responsiveness** at 768px breakpoint
 5. **Write clear commit messages**
-6. **Submit PR when ready** for review
+6. **Submit PR** when ready for review
+7. **Wait for approval** before merging
 
 ---
 
@@ -302,15 +311,18 @@ The design uses two main breakpoints:
 
 ```bash
 # Clone repository
-git clone https://github.com/takrim-01/Knowledge-Cafe.git
+git clone https://github.com/takrim-01/Learning-HUB.git
 
-# Check status of files
-git status
+# Pull latest changes
+git pull origin main
 
 # Create new branch
 git checkout -b feature/your-feature-name
 
-# Add changes
+# Check status
+git status
+
+# Stage changes
 git add .
 
 # Commit changes
@@ -319,29 +331,28 @@ git commit -m "Your commit message"
 # Push to GitHub
 git push origin feature/your-feature-name
 
-# Switch between branches
+# Switch branches
 git checkout main
 
-# Pull latest changes
-git pull origin main
+# View branch list
+git branch
 ```
 
 ---
 
-## 📧 Questions?
+## 📧 Questions or Issues?
 
-If you're stuck:
 1. Check this README first
-2. Review the code comments
-3. Ask your Takreem
+2. Review code comments in relevant files
+3. Check existing issues on GitHub
+4. Ask Takreem for guidance
 
 ---
 
 ## 📄 License
 
-This project is part of the Knowledge Café collaborative initiative.
+This project is part of the Knowledge Café collaborative learning initiative.
 
 ---
 
 **Happy coding! 🚀**
-

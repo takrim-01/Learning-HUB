@@ -379,7 +379,233 @@ body{
     height: 60px;
   }
 }
-.course-page{
+.html-page{
   background-color: #3a4b5c;
 }
 
+.css-page{
+  background-color: #2c3a47;
+}
+
+.javascript-page{
+  background-color: #1e2830 ;
+}
+
+.python-page{
+  background-color: #2c3a47;
+}
+
+.sql-page{
+  background-color: #3a4b5c;
+}
+
+.html-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1.5rem;           
+  max-width: 1200px;         
+  margin: 0 auto;   
+  color: #fff;       
+}
+
+.html-left, .html-right {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .html-container {
+    flex-direction: row;
+    padding: 3rem 2rem;     
+    gap: 3rem;                
+  }
+}
+
+@media (min-width: 1200px) {
+  .html-container {
+    padding: 4rem 0rem;      
+  }
+}
+
+.css-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;           
+  max-width: 1200px;         
+  margin: 0 auto; 
+  color: #fff;         
+}
+
+.css-left, .css-right {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .css-container {
+    flex-direction: row;
+    padding: 3rem 2rem;     
+    gap: 3rem;                
+  }
+}
+
+@media (min-width: 1200px) {
+  .css-container {
+    padding: 4rem 0rem;      
+  }
+}
+
+.javascript-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;           
+  max-width: 1200px;         
+  margin: 0 auto; 
+  color: #fff;         
+}
+
+.javascript-left, .javascript-right {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .javascript-container {
+    flex-direction: row;
+    padding: 3rem 2rem;     
+    gap: 3rem;                
+  }
+}
+
+@media (min-width: 1200px) {
+  .javascript-container {
+    padding: 4rem 0rem;      
+  }
+}
+
+.python-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;           
+  max-width: 1200px;         
+  margin: 0 auto;  
+  color: #f0f0f0;        
+}
+
+.python-left, .python-right {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .python-container {
+    flex-direction: row;
+    padding: 3rem 2rem;     
+    gap: 3rem;                
+  }
+}
+
+@media (min-width: 1200px) {
+  .python-container {
+    padding: 4rem 0rem;      
+  }
+}
+
+.sql-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;           
+  max-width: 1200px;         
+  margin: 0 auto; 
+  color: #fff;         
+}
+
+.sql-left, .sql-right {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .sql-container {
+    flex-direction: row;
+    padding: 3rem 2rem;     
+    gap: 3rem;                
+  }
+}
+
+@media (min-width: 1200px) {
+  .sql-container {
+    padding: 4rem 0rem;      
+  }
+}
+
+
+.html-left,
+.css-left,
+.javascript-left,
+.python-left,
+.sql-left{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.html-left h2,
+.css-left h2,
+.javascript-left h2,
+.python-left h2,
+.sql-left h2{
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.html-left p,
+.css-left p,
+.javascript-left p,
+.python-left p,
+.sql-left p{
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+  font-family: 'Georgia', 'Garamond', serif;
+}
+
+.html-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 1.25rem;
+}
+
+.html-btn-design {
+  width: 200px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  border-radius: 14px;
+  font-family: 'Georgia', 'Garamond', serif;
+  cursor: pointer;
+  border: 1.5px solid #e0e4ec;
+  background-color: #ffffff;
+  color: #2c3e50;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+  transition: all 0.25s ease;
+}
+
+.html-btn-design:hover {
+  border-color: #7ea8d8;
+  color: #1a5296;
+  box-shadow: 0 4px 14px rgba(126, 168, 216, 0.25);
+}
+
+.html-btn-design:active {
+  box-shadow: 0 1px 4px rgba(44, 62, 80, 0.1);
+}

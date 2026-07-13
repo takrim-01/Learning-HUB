@@ -193,7 +193,7 @@ button:hover{
 .facebook-btn{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:  center;
     background-color: #3b5998;
     color: #fff;
     padding: 10px 14px;

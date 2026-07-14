@@ -177,54 +177,35 @@ button:hover{
     color: #888;
     font-weight: bold;
 }
-.social-login{
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin: 10px 0 8px;
-}
-.google-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    padding: 10px 14px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-}
-.google-btn-logo{
-    height: 20px;
-    width: auto;
-}
-.facebook-btn{
-    display: flex;
-    align-items: center;
-    justify-content:  center;
-    background-color: #3b5998;
-    color: #fff;
-    padding: 10px 14px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-}
-.facebook-btn-logo{
-    height: 20px;
-    width: auto;
-}
-.github-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    color: #fff;
-    padding: 10px 14px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-}
-.github-btn-logo{
-    height:20px;
-    width: auto;
+.social-buttons {
+  display: flex;
+  gap: 10px;
 }
 
+.social-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  padding: 10px 12px;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  font-weight: 600;
+}
+
+.social-btn.google:hover {
+  border-color: #db4437;
+  color: #db4437;
+}
+
+.social-btn.github:hover {
+  border-color: #565658;
+  color: #565658;
+}
+.social-btn.facebook:hover {
+  border-color: blue;
+  color: blue;
+}

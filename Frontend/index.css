@@ -834,7 +834,6 @@ body{
 }
 
 .box-dsa:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 20px rgba(0, 123, 255, 0.25);
+  border: 3px solid #f0de93;
   font-size: 1.3rem;
 }

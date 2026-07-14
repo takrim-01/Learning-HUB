@@ -838,44 +838,33 @@ body{
   font-size: 1.3rem;
 }
 
-.quiz-page{
-  background-color: #3a4b5c;
+.login-page{
+  background-color: #fcf2df;
 }
 
-.quiz-container {
+.login-heading{
   display: flex;
-  flex-direction: row; 
-  gap: 16px;
-  max-width: 1200px;
+  flex-direction: column;
 }
 
-.quiz-box {
-  flex: 1;
-  padding: 20px;
-  background: #f0f0f0;
-  border-radius: 8px;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .quiz-container {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 769px) {
-  .quiz-container {
-    flex-direction: row;
-  }
-} 
-
-.quiz-heading{
-  font-size: 3rem;
-  text-align: center;
+.login-heading h2{
   display: flex;
   justify-content: center;
-  color: #fff;
+  padding-top: 30px;
+  font-size: 3rem;
   font-family: 'Georgia', 'Garamond', serif;
-  margin-bottom: 40px;
-  padding-top: 20px;
+  color: #1e2830;
+}
+
+.login-heading p{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #556576;
+
+}
+
+.footer-page{
+  background-color: #fff;
 }

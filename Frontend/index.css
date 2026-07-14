@@ -837,3 +837,45 @@ body{
   border: 3px solid #c9a35d;
   font-size: 1.3rem;
 }
+
+.quiz-page{
+  background-color: #3a4b5c;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: row; 
+  gap: 16px;
+  max-width: 1200px;
+}
+
+.quiz-box {
+  flex: 1;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .quiz-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+  .quiz-container {
+    flex-direction: row;
+  }
+} 
+
+.quiz-heading{
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Georgia', 'Garamond', serif;
+  margin-bottom: 40px;
+  padding-top: 20px;
+}

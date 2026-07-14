@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify OTP</title>
+  <link rel="stylesheet" href="otp.css" />
+</head>
+<body>
+  <div class="container">
+    <p class="eyebrow">Verification</p>
+    <h1>Enter OTP</h1>
+    <p class="subtitle">We sent a 6-digit code to your email. Enter it below to verify your account.</p>
+
+    <form class="otp-form" action="../resetpass/resetpass.html" method="get">
+      <div class="otp-inputs">
+        <input type="text" maxlength="1" inputmode="numeric" autocomplete="one-time-code" />
+        <input type="text" maxlength="1" inputmode="numeric" />
+        <input type="text" maxlength="1" inputmode="numeric" />
+        <input type="text" maxlength="1" inputmode="numeric" />
+        <input type="text" maxlength="1" inputmode="numeric" />
+        <input type="text" maxlength="1" inputmode="numeric" />
+      </div>
+
+      <button type="submit">Confirm OTP</button>
+    </form>
+
+    <p class="resend">Didn't receive the code? <a href="#">Resend OTP</a></p>
+  </div>
+</body>
+</html>

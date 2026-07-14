@@ -760,3 +760,59 @@ body{
 .html-right{
   padding: 20px;
 }
+
+.other-course-page{
+  background-color: #1e2830;
+}
+
+.other-course-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  justify-content: center;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.box {
+  background: #f2f2f2;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+  
+}
+
+
+.featured-box {
+  margin-top: 40px;
+  width: 250px;
+}
+
+@media (max-width: 768px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured-box {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.other-course-heading{
+  font-size: 3rem;
+  color: #fff;
+  font-family: 'Georgia', 'Garamond', serif;
+  margin-bottom: 40px;
+}
+
